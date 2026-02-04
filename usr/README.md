@@ -1,16 +1,24 @@
 # couldai_user_app
 
-A new Flutter project.
+A Flutter application for verifying PDF digital signatures using the EC Europa DSS API.
+
+## Project Structure
+
+- `lib/`: Flutter application code.
+- `scripts/`: Node.js utilities and backend setup guides.
+  - `verify_signature.js`: A Node.js script to verify signatures via the API.
+  - `dss_setup_guide.md`: **READ THIS FIRST** to set up the local DSS backend.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. **Setup the Backend**: Follow instructions in `scripts/dss_setup_guide.md` to build and run the DSS Webapp locally.
+2. **Run the App**:
+   ```bash
+   flutter run
+   ```
+3. **Verify a PDF**: Select a signed PDF in the app. It will communicate with your local DSS instance to verify the signature.
 
-A few resources to get you started if this is your first Flutter project:
+## Resources
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [DSS GitHub Repository](https://github.com/esig/dss)
+- [Flutter Documentation](https://docs.flutter.dev/)
